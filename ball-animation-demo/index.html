@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物理动画演示</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div class="controls">
+            <div class="control-group">
+                <label for="gravity">重力</label>
+                <input type="range" id="gravity" min="0" max="2" step="0.1" value="0.5">
+                <span class="value">0.5</span>
+            </div>
+            <div class="control-group">
+                <label for="friction">摩擦力</label>
+                <input type="range" id="friction" min="0" max="1" step="0.01" value="0.99">
+                <span class="value">0.99</span>
+            </div>
+            <div class="control-group">
+                <label for="bounce">弹性</label>
+                <input type="range" id="bounce" min="0" max="1" step="0.01" value="0.8">
+                <span class="value">0.8</span>
+            </div>
+            <div class="buttons">
+                <button id="addBall">添加小球</button>
+                <button id="clearBalls">清除所有</button>
+                <button id="togglePause">暂停/继续</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/ball.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
